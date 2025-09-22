@@ -1042,6 +1042,9 @@
 <a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">fib</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
 <p>说一下比较官方的东西，将每个求解过的子问题的解记录下来，当下一次遇到同样的子问题时，就可以直接使用之前记录的结果，而不用重复计算。这就是记忆化搜索的精髓。</p>
 <p>下面我画两张图来让小伙伴们看看递归和使用记忆化搜索优化后的递归的搜索过程。
 <img alt="递归示意图" src="https://img-blog.csdnimg.cn/71de169bf1dc4aafbdef1bb0f9847336.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5omT6JOd5qGl5p2v55qE6YCa5L-h5Lq6,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" />
