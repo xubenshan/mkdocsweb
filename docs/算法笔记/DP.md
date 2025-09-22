@@ -29,13 +29,7 @@ int fib(int n）
 
 !!! note 
 
-```
-说一下比较官方的东西，将每个求解过的子问题的解记录下来，当下一次遇到同样的子问题时，就可以直接使用之前记录的结果，而不用重复计算。这就是记忆化搜索的精髓。
-```
-
-
-
-​	
+​	说一下比较官方的东西，将每个求解过的子问题的解记录下来，当下一次遇到同样的子问题时，就可以直接使用之前  	记录的结果，而不用重复计算。这就是记忆化搜索的精髓。
 
 下面我画两张图来让小伙伴们看看递归和使用记忆化搜索优化后的递归的搜索过程。
 ![递归示意图](https://img-blog.csdnimg.cn/71de169bf1dc4aafbdef1bb0f9847336.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5omT6JOd5qGl5p2v55qE6YCa5L-h5Lq6,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
