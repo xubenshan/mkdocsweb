@@ -1046,6 +1046,16 @@
 <p class="admonition-title">Note</p>
 </div>
 <p>​   说一下比较官方的东西，将每个求解过的子问题的解记录下来，当下一次遇到同样的子问题时，就可以直接使用之前     记录的结果，而不用重复计算。这就是记忆化搜索的精髓。</p>
+<div class="admonition note">
+<p class="admonition-title">关于 merge 和 rebase 的区别与联系</p>
+<p><strong>Merge</strong> 和 <strong>Rebase</strong> 都是用于整合分支的 Git 操作，但它们的原理和效果不同：</p>
+<p><strong>Merge（合并）</strong>: 将目标分支的最新提交合并到当前分支，保留所有分支的历史轨迹。合并后会生成一个新的"合并提交"，历史记录呈现为分叉和汇合的结构，便于追踪分支的开发过程。</p>
+<ul>
+<li><strong>优点</strong>：保留分支历史，适合多人协作。</li>
+<li><strong>缺点</strong>：提交历史可能较为复杂。</li>
+</ul>
+<p><strong>Rebase（变基）</strong>: 将当前分支的提交"移动"到目标分支的最新提交之后，使提交历史变得线性。不会生成合并提交，历史看起来更简洁。</p>
+</div>
 <p>下面我画两张图来让小伙伴们看看递归和使用记忆化搜索优化后的递归的搜索过程。
 <img alt="递归示意图" src="https://img-blog.csdnimg.cn/71de169bf1dc4aafbdef1bb0f9847336.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5omT6JOd5qGl5p2v55qE6YCa5L-h5Lq6,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" />
 <img alt="记忆化搜索示意图" src="https://img-blog.csdnimg.cn/5059a1ea993f498aa2639b625acbfa6c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5omT6JOd5qGl5p2v55qE6YCa5L-h5Lq6,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" /></p>
