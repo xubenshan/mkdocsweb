@@ -1,0 +1,105 @@
+site_name: 小熊的知识库
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: white
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: cyan
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    
+  font:
+    text: "霞鹜文楷"
+    code: "Maple Mono NF CN"
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - search.share
+    - search.suggest
+    - header.autohide
+    - header.links
+    - content.code.copy
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+  - meta
+  - sane_lists
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.keys
+  - pymdownx.progressbar
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji
+  - pymdownx.magiclink
+  - pymdownx.arithmatex:
+      generic: true
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+
+
+
+
+nav:
+  - 算法:
+      - 算法笔记/index.md
+      - 算法笔记/search.md
+      - 算法笔记/DP.md
+      - 算法笔记/并查集.md
+  - Linux:
+      - Linux/Linux学习笔记.md
+
+  - tools:
+      - tools/图床.md
+      - tools/vscode配置C++环境.md
+    
+plugins:
+  - search
