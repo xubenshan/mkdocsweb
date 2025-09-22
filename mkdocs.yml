@@ -1,5 +1,9 @@
 site_name: 小熊的知识库
-site_url: https://mydomain.org/mysite
+# site_url: https://mydomain.org/mysite
+
+
+
+site_url: https://xubenshan.github.io/mkdocsweb/
 theme:
   name: material
   palette: 
@@ -89,6 +93,8 @@ extra_javascript:
 
 
 nav:
+
+  - 首页: index.md
   - 算法:
       - 算法笔记/index.md
       - 算法笔记/search.md
@@ -97,9 +103,10 @@ nav:
   - Linux:
       - Linux/Linux学习笔记.md
 
-  - tools:
+  - Tools:
       - tools/vscode配置C++环境.md
       - tools/Github相关操作.md
+      - tools/Gitlearn.md
     
 plugins:
   - search

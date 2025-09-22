@@ -62,6 +62,12 @@ git add .
 git commit -m "first"
 
 git push 
+```
 
+分支：
+
+```bash
+# 删除远程的master分支
+git push origin --delete master
 ```
 
