@@ -87,7 +87,7 @@ git config --global --list
 
 ## **Git基本理论**
 
-![image-20250922172945107](https://xubenshan-pic.oss-cn-beijing.aliyuncs.com/img/image-20250922172945107.png)
+<img src="https://xubenshan-pic.oss-cn-beijing.aliyuncs.com/img/image-20250922172945107.png" alt="image-20250922172945107" style="zoom:50%;" />
 
 ## **Git项目搭建**
 
