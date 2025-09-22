@@ -94,7 +94,8 @@ extra_javascript:
 
 nav:
 
-  - 首页: index.md
+  - 首页: 
+      - index.md
   - 算法:
       - 算法笔记/index.md
       - 算法笔记/search.md
